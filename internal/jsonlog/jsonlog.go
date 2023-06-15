@@ -44,6 +44,10 @@ func New(out io.Writer, minLevel Level) *Logger {
 	}
 }
 
+func (l *Logger) Write(message []byte) (int, error) {
+	return l.print(LevelError, string(message), nil)
+}
+
 func (l *Logger) print(level Level, message string, properties map[string]string) (int, error) {
 	if level < l.minLevel {
 		return 0, nil
