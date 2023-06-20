@@ -168,3 +168,7 @@ func (m UserModel) Update(user *User) error {
 	}
 	return nil
 }
+
+func (m UserModel) GetForToken(scope, tokenPlainText string) (*User, error) {
+	return nil, nil
+}
