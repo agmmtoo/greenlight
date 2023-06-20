@@ -79,7 +79,7 @@ func (app *application) activateUserHandler(w http.ResponseWriter, r *http.Reque
 
 	err := app.readJSON(w, r, &input)
 	if err != nil {
-		app.badRequestResponse(w, r, err)
+		app.badRequestResponse(w, r, err.Error())
 		return
 	}
 	v := validator.New()
