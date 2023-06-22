@@ -1,0 +1,7 @@
+export GREENLIGHT_DB_DSN=postgres://username:password@localhost/database
+
+# smtp
+export SMTP_HOST=
+export SMTP_PORT=
+export SMTP_USERNAME=
+export SMTP_PASSWORD=
