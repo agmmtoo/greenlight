@@ -57,6 +57,7 @@ audit: vendor
 
 ## vendor: tidy and vendor dependencies
 .PHONY: vendor
+vendor:
 	@echo 'Tidying and verifying module dependencies...'
 	go mod tidy
 	go mod verify
